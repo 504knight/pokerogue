@@ -2781,8 +2781,9 @@ export class PlayerPokemon extends Pokemon {
   constructor(scene: BattleScene, species: PokemonSpecies, level: integer, abilityIndex: integer, formIndex: integer, gender: Gender, shiny: boolean, variant: Variant, ivs: integer[], nature: Nature, dataSource: Pokemon | PokemonData) {
     super(scene, 106, 148, species, level, abilityIndex, formIndex, gender, shiny, variant, ivs, nature, dataSource);
     
-    if (Overrides.STARTER_LEVEL_OVERRIDE)
+    if (Overrides.STARTER_LEVEL_OVERRIDE) {
       this.level = Overrides.STARTER_LEVEL_OVERRIDE;
+    }
 
     if (Overrides.SHINY_OVERRIDE) {
       this.shiny = true;
@@ -3191,8 +3192,10 @@ export class EnemyPokemon extends Pokemon {
     this.trainerSlot = trainerSlot;
     if (boss) {
       this.setBoss();
-    if (Overrides.OPP_LEVEL_OVERRIDE)
+    }
+    if (Overrides.OPP_LEVEL_OVERRIDE) {
       this.level = Overrides.OPP_LEVEL_OVERRIDE;
+    }
 
     if (!dataSource) {
       this.generateAndPopulateMoveset();
