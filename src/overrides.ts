@@ -73,10 +73,10 @@ export const OPP_SPECIES_OVERRIDE: Species | integer = 771;
 export const OPP_ABILITY_OVERRIDE: Abilities = Abilities.INNARDS_OUT;
 export const OPP_PASSIVE_ABILITY_OVERRIDE = Abilities.NONE;
 export const OPP_MOVESET_OVERRIDE: Array<Moves> = [
-    Moves.SPLASH,
-    Moves.SPLASH,
-    Moves.SPLASH,
-    Moves.SPLASH,
+  Moves.SPLASH,
+  Moves.SPLASH,
+  Moves.SPLASH,
+  Moves.SPLASH,
 ];
 export const OPP_SHINY_OVERRIDE: boolean = false;
 export const OPP_VARIANT_OVERRIDE: Variant = 0;
