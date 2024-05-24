@@ -4622,6 +4622,9 @@ export class SwitchAbilitiesAttr extends MoveEffectAttr {
     const tempAbilityId = user.getAbility().id;
     user.summonData.ability = target.getAbility().id;
     target.summonData.ability = tempAbilityId;
+    console.log(`switching ${user.getAbility().name} with ${target.getAbility().name}`);
+    console.log('user', user);
+    console.log('target', target);
 
     user.scene.queueMessage(getPokemonMessage(user, " swapped\nabilities with its target!"));
 

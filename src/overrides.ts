@@ -54,23 +54,33 @@ export const STARTING_LEVEL_OVERRIDE: integer = 0;
  * default is 0 to not override
  * @example SPECIES_OVERRIDE = Species.Bulbasaur;
  */
-export const STARTER_SPECIES_OVERRIDE: Species | integer = 0;
+export const STARTER_SPECIES_OVERRIDE: Species | integer = 908;
 export const ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
-export const MOVESET_OVERRIDE: Array<Moves> = [];
+export const MOVESET_OVERRIDE: Array<Moves> = [
+  Moves.SKILL_SWAP,
+  Moves.FLOWER_TRICK,
+];
 export const SHINY_OVERRIDE: boolean = false;
 export const VARIANT_OVERRIDE: Variant = 0;
+export const STARTER_LEVEL_OVERRIDE: integer = 86;
 
 /**
  * OPPONENT / ENEMY OVERRIDES
  */
 
-export const OPP_SPECIES_OVERRIDE: Species | integer = 0;
-export const OPP_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
+export const OPP_SPECIES_OVERRIDE: Species | integer = 771;
+export const OPP_ABILITY_OVERRIDE: Abilities = Abilities.INNARDS_OUT;
 export const OPP_PASSIVE_ABILITY_OVERRIDE = Abilities.NONE;
-export const OPP_MOVESET_OVERRIDE: Array<Moves> = [];
+export const OPP_MOVESET_OVERRIDE: Array<Moves> = [
+    Moves.SPLASH,
+    Moves.SPLASH,
+    Moves.SPLASH,
+    Moves.SPLASH,
+];
 export const OPP_SHINY_OVERRIDE: boolean = false;
 export const OPP_VARIANT_OVERRIDE: Variant = 0;
+export const OPP_LEVEL_OVERRIDE: integer = 70;
 
 /**
  * MODIFIER / ITEM OVERRIDES
